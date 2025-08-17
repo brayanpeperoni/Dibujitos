@@ -2,7 +2,7 @@ header {
   height: 100vh;
   background-image: url('./img/fondo.png');
   background-size: contain;
-  background-position: top 0% right 40%; /* mueve un poco hacia la derecha */
+  background-position: top 0% right 35%; /* mueve un poco hacia la derecha */
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0);
   display: flex;
@@ -12,3 +12,4 @@ header {
   color: white;
   padding-top: 20px;
 }
+
