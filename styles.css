@@ -1,11 +1,43 @@
 .fondo {
   display: inline-block;
-  border: 5px solid #fff;       /* borde blanco de 5px */
-  border-radius: 12px;          /* bordes redondeados */
-  padding: 10px;                /* espacio entre la imagen y el borde */
-  background-color: #ff0000;    /* fondo rojo */
-  margin-left: -12px;           /* desplaza un poco a la izquierda */
-  margin-top: -12px;            /* 👉 desplaza el div hacia arriba */
+  padding: 10px;
+  border: 5px solid;
+  border-radius: 12px;
+  margin-left: -12px;
+  margin-top: -12px;
+
+  /* Borde tipo rayos */
+  border-image-slice: 1;
+  border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  animation: borderGlow 3s linear infinite;
+
+  /* Fondo colorido animado */
+  background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8f00ff);
+  background-size: 1400% 1400%;
+  animation: backgroundAnim 10s ease infinite;
+
+  /* Brillo del borde */
+  box-shadow: 0 0 10px rgba(255,255,255,0.2), 0 0 20px rgba(0,255,255,0.2);
+}
+
+/* Animación del borde tipo rayos */
+@keyframes borderGlow {
+  0% {
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  }
+  50% {
+    border-image-source: linear-gradient(135deg, violet, indigo, blue, green, yellow, orange, red);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  }
+}
+
+/* Animación de fondo colorido */
+@keyframes backgroundAnim {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .fondo img {
@@ -14,7 +46,42 @@
   object-fit: cover;            /* ajusta la imagen sin deformarla */
   border-radius: 8px;           /* opcional, para que siga el borde redondeado */
 }
+.admin {
+  color: #fff;                        /* texto blanco */
+  font-size: 2.5rem;                  /* tamaño grande */
+  font-weight: bold;                   /* más grueso */
+  text-align: center;                  /* centrado */
 
+  /* efecto de neón solo en las letras */
+  text-shadow: 
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 30px #0ff,
+    0 0 40px #0ff;
+
+  animation: glow 1.5s ease-in-out infinite alternate; /* animación de brillo */
+}
+
+/* animación de brillo neón */
+@keyframes glow {
+  from {
+    text-shadow: 
+      0 0 5px #0ff,
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 30px #0ff,
+      0 0 40px #0ff;
+  }
+  to {
+    text-shadow: 
+      0 0 10px #0ff,
+      0 0 20px #0ff,
+      0 0 30px #0ff,
+      0 0 40px #0ff,
+      0 0 50px #0ff;
+  }
+}
 
 
 
