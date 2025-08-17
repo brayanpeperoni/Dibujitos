@@ -1,8 +1,8 @@
 header {
-  height: 1200px; /* o el alto que necesites */
-  background-image: url('./img/fondo.png');
-  background-size: contain;         /* mantiene la proporción de la imagen */
-  background-position: center right; /* centrado verticalmente y alineado a la derecha */
-  background-repeat: no-repeat;
-  background-color: transparent;
+  height: 1200px;
+  background: 
+    linear-gradient(to right, #000 50%, transparent 50%), /* mitad izquierda fija negra */
+    url('./img/fondo.png') center right no-repeat;
+  background-size: auto, 700px auto; /* imagen más grande */
+  background-color: #000;
 }
