@@ -3,5 +3,5 @@
   border: 5px solid #fff;      /* borde blanco de 5px */
   border-radius: 12px;         /* bordes redondeados (opcional) */
   padding: 10px;               /* espacio entre la imagen y el borde */
-  background-color: #000;      /* color de fondo dentro del marco */
+  background-color: #ff0000;      /* color de fondo dentro del marco */
 }
