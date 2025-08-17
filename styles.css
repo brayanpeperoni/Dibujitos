@@ -206,9 +206,26 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); 
   margin: 40px auto;   /* centra horizontalmente */
   max-width: 1000px;   /* ancho máximo */
-  position: relative;  /* mantiene su lugar en el flujo */
+  position: relative;  
   left: 230px;         /* lo corre a la derecha */
 }
+
+.description h2 {
+  font-family: 'Arial Black', Gadget, sans-serif; 
+  color: #0ff; 
+  font-size: 3.5rem;   /* más grande */
+  text-shadow: 0 0 5px #0ff, 0 0 15px #0ff;
+  margin-bottom: 20px;
+}
+
+.description p {
+  font-family: 'Verdana', Geneva, sans-serif; 
+  color: #fff; 
+  font-size: 1.8rem;   /* más grande */
+  line-height: 2;      /* más aire entre líneas */
+  text-shadow: 0 0 3px #000;
+}
+
 
 
 
@@ -330,6 +347,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* brillo suave */
   margin: 20px; /* espacio alrededor */
 }
+
 
 
 
