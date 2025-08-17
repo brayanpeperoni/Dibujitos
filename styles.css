@@ -53,7 +53,7 @@
   text-align: center;
 
   /* desplazamiento hacia la derecha */
-  margin-left: 150px;
+  margin-left: 650px;
 
   /* efecto de neón más intenso */
   text-shadow: 
@@ -155,13 +155,13 @@ body {
   gap: 30px; /* separación entre perfiles */
   justify-items: center; /* centra cada perfil en su celda */
   justify-content: start; /* alineación inicial */
-  padding-left: 150px; /* desplaza todo el grid más a la derecha */
+  padding-left: 35px; /* desplaza todo el grid más a la derecha */
   margin: 0 auto;
 }
 
 .profile img {
-  width: 220px;
-  height: 220px;
+  width: 270px;
+  height: 270px;
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(0,0,0,0.3);
   animation: dragonBallGlow 2s infinite alternate;
