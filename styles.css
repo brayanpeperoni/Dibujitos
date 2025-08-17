@@ -207,7 +207,7 @@ body {
   margin: 40px auto;   /* centra horizontalmente */
   max-width: 1000px;   /* ancho máximo */
   position: relative;  
-  left: 230px;         /* lo corre a la derecha */
+  left: 325px;         /* lo corre a la derecha */
 }
 
 .description h2 {
@@ -347,6 +347,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* brillo suave */
   margin: 20px; /* espacio alrededor */
 }
+
 
 
 
