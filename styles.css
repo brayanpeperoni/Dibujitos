@@ -204,7 +204,7 @@ body {
   background: #111; 
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); 
-  margin-left: 230px; /* mueve el div a la derecha */
+  margin-left: 270px; /* mueve el div a la derecha */
   max-width: 1000px;    /* opcional, para que no se expanda demasiado */
 }
 
@@ -226,7 +226,7 @@ body {
 
 
 .banner {
-  width: 1500px;           /* ancho del banner */
+  width: 1250px;           /* ancho del banner */
   margin-left: 150px;    /* desplaza a la derecha */
   border: 8px solid #0ff; /* borde base azul neón */
   border-radius: 15px;    /* bordes redondeados */
@@ -239,7 +239,7 @@ body {
 }
 
 .banner img {
-  width: 1500px;
+  width: 1250px;
   height: auto;
   display: block;
 }
@@ -313,7 +313,7 @@ body {
 .logo {
   display: block;           /* convierte la imagen en bloque */
   margin: 20px auto;        /* centra horizontalmente */
-  width: 200px;             /* ajusta el tamaño a tu gusto */
+  width: 400px;             /* ajusta el tamaño a tu gusto */
   height: auto;
   animation: flicker 2s infinite alternate; /* efecto de brillo que prende y apaga */
 }
@@ -343,4 +343,5 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* brillo suave */
   margin: 20px; /* espacio alrededor */
 }
+
 
