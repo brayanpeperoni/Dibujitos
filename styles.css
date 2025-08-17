@@ -1,19 +1,17 @@
 .fondo {
-  display: inline-block;       /* se ajusta al tamaño de la imagen */
-  border: 5px solid #fff;      /* borde blanco de 5px */
-  border-radius: 12px;         /* bordes redondeados (opcional) */
-  padding: 10px;               /* espacio entre la imagen y el borde */
-  background-color: #ff0000;      /* color de fondo dentro del marco */
+  display: inline-block;
+  border: 5px solid #fff;       /* borde blanco de 5px */
+  border-radius: 12px;          /* bordes redondeados */
+  padding: 10px;                /* espacio entre la imagen y el borde */
+  background-color: #ff0000;    /* fondo rojo */
+  margin-left: 10px;             /* 👉 desplaza el div 5px a la derecha */
 }
 .fondo img {
   width: 1550px;
   height: auto;
-  object-fit: cover; /* ajusta la imagen sin deformarla */
-  border-radius: 8px; /* opcional, para que siga el borde redondeado */
+  object-fit: cover;            /* ajusta la imagen sin deformarla */
+  border-radius: 8px;           /* opcional, para que siga el borde redondeado */
 }
-
-
-
 
 
 
