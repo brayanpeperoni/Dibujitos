@@ -13,11 +13,20 @@
  
   <div class="fondo">
     <img class="b" src="./img/fondo.png" alt="fond">
-  </div>
+  </div> <br> <br>
+<div class="description">
+      <h2>Descripción</h2> 
+      <p alt="des">
+        Bienvenidos a la comunidad Legions Dragons Z, un espacio donde
+        compartimos creatividad, diversión y mucho más. ¡Únete y sé parte de
+        esta gran familia!
+      </p> <br>
+    </div>
 
-<h2 class="admin">Administradores de la Comunidad</h2>  
 <body class="gif">
+<h2 class="admin">Administradores de la Comunidad</h2>  <br>
 
+    <br>
   <div class="main-content">
     <!-- IZQUIERDA: perfiles -->
     <div class="profiles">
@@ -29,10 +38,11 @@
       </div>
 
       <div class="profile">
-        <a href="https://www.tiktok.com/@palvko1" target="_blank">
+        <a href="https://www.tiktok.com/@palvko1" target="_blank" onclick="playAudio('audio-brayan')">
           <img class="glow" src="./img/brayan.png" alt="Brayan" />
           <p>Brayan</p>
         </a>
+        <audio id="audio-brayan" src="./audio/brayan.mp3" preload="auto"></audio>
       </div>
 
       <div class="profile">
@@ -43,7 +53,7 @@
       </div>
 
       <div class="profile">
-        <a href="https://www.tiktok.com/@andrea.ariasof" target="_blank" onclick="reproducirAndrea()">
+        <a href="https://www.tiktok.com/@andrea.ariasof" target="_blank" onclick="playAudio('audio-andrea')">
           <img class="glow" src="./img/andrea.png" alt="Andrea" />
           <p>Andrea</p>
         </a>
@@ -90,21 +100,11 @@
         </a>
       </div>
     </div>
+    
+  </div> <br><br>
 
-    <!-- DERECHA: descripción -->
-    <div class="description">
-      <h2>Descripción</h2>
-      <p alt="des">
-        Bienvenidos a la comunidad Legions Dragons Z, un espacio donde
-        compartimos creatividad, diversión y mucho más. ¡Únete y sé parte de
-        esta gran familia!
-      </p> <br>
-
-      <img src="./img/banner.png" alt="banner">
-    </div>
-  </div>
-<div>
-  
+<div class="banner">
+  <img src="./img/banner.png" alt="banner">
 </div>
 <!-- Botones flotantes -->
 <div class="floating-icons">
@@ -122,6 +122,15 @@
   </a>
 </div>
 
+<script>
+function playAudio(audioId) {
+  const audio = document.getElementById(audioId);
+  if (audio) {
+    audio.currentTime = 0; // reinicia si estaba reproduciéndose
+    audio.play();
+  }
+}
+</script>
 </body>
 
 ¡
