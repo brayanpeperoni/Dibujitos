@@ -1,14 +1,14 @@
 header {
-  height: 1000px;
+  height: 1200px; /* altura aumentada */
   background-image: url('./img/fondo.png');
-  background-size: contain;
-  background-position: top right; /* imagen en la esquina superior derecha */
+  background-size: contain;          /* mantiene la proporción de la imagen */
+  background-position: top right;    /* imagen en la esquina superior derecha */
   background-repeat: no-repeat;
   background-color: transparent;
 
   display: flex;
-  justify-content: center; /* centra horizontalmente */
-  align-items: center;     /* centra verticalmente */
+  justify-content: center;           /* centra horizontalmente el contenido */
+  align-items: center;               /* centra verticalmente el contenido */
   text-align: center;
   color: white;
 }
