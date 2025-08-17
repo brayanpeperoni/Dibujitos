@@ -1,24 +1,14 @@
-/* Fondo general para el header */
 header {
-  background-image: url("./img/fondo.png"); /* tu imagen */
-  background-size: cover;   /* hace que la imagen cubra todo el header */
-  background-position: center; /* centra la imagen */
+  height: 100vh;
+  background-image: url('./img/fondo.png');
+  background-size: contain;
+  background-position: top center; /* la sube hacia arriba */
   background-repeat: no-repeat;
-  color: white;  /* cambia color de texto si lo necesitas */
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* contenido arriba */
   text-align: center;
-  padding: 40px 20px; /* espacio interno */
+  color: white;
+  padding-top: 20px; /* margen superior para el texto */
 }
-
-/* Ajuste especial para celulares */
-@media (max-width: 768px) {
-  header {
-    background-image: url("./img/fondo.png"); /* imagen optimizada para móvil */
-    padding: 20px 10px; /* menos espacio para pantallas pequeñas */
-  }
-
-  header h1 {
-    font-size: 1.5rem; /* letra más pequeña en móviles */
-    line-height: 1.2;
-  }
-}
-
