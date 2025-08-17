@@ -12,7 +12,7 @@ header {
 /* Ajuste especial para celulares */
 @media (max-width: 768px) {
   header {
-    background-image: url("./img/header-bg-mobile.jpg"); /* imagen optimizada para móvil */
+    background-image: url("./img/fondo.png"); /* imagen optimizada para móvil */
     padding: 20px 10px; /* menos espacio para pantallas pequeñas */
   }
 
@@ -21,3 +21,4 @@ header {
     line-height: 1.2;
   }
 }
+
