@@ -42,38 +42,32 @@
 
 .fondo img {
   width: 1550px;
-  height: auto;
+  height: 80%;
   object-fit: cover;            /* ajusta la imagen sin deformarla */
   border-radius: 8px;           /* opcional, para que siga el borde redondeado */
 }
 .admin {
-  color: #fff;                        /* texto blanco */
-  font-size: 2.5rem;                  /* tamaño grande */
-  font-weight: bold;                   /* más grueso */
-  text-align: center;                  /* centrado */
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
 
-  /* efecto de neón solo en las letras */
+  /* desplazamiento hacia la derecha */
+  margin-left: 150px;
+
+  /* efecto de neón más intenso */
   text-shadow: 
-    0 0 5px #0ff,
     0 0 10px #0ff,
     0 0 20px #0ff,
     0 0 30px #0ff,
-    0 0 40px #0ff;
+    0 0 40px #0ff,
+    0 0 50px #0ff;
 
   animation: glow 1.5s ease-in-out infinite alternate; /* animación de brillo */
 }
 
-/* animación de brillo neón */
 @keyframes glow {
   from {
-    text-shadow: 
-      0 0 5px #0ff,
-      0 0 10px #0ff,
-      0 0 20px #0ff,
-      0 0 30px #0ff,
-      0 0 40px #0ff;
-  }
-  to {
     text-shadow: 
       0 0 10px #0ff,
       0 0 20px #0ff,
@@ -81,7 +75,16 @@
       0 0 40px #0ff,
       0 0 50px #0ff;
   }
+  to {
+    text-shadow: 
+      0 0 15px #0ff,
+      0 0 30px #0ff,
+      0 0 45px #0ff,
+      0 0 60px #0ff,
+      0 0 75px #0ff;
+  }
 }
+
 body {
   margin: 0;
   min-height: 200vh; /* para scroll si quieres */
@@ -109,45 +112,59 @@ body {
   background: rgba(0,0,0,0.5); /* opcional para contraste */
   border-radius: 10px;
 }
-
-/* ===== CONTENEDOR DE PERFILES ===== */
 .profiles {
   display: grid;
-  grid-template-columns: repeat(4, auto);
-  gap: 15px;
-  justify-items: center;
-  margin: -20px auto 0 auto; /* sube un poco todo */
+  grid-template-columns: repeat(4, max-content); /* columnas ajustadas al tamaño de las imágenes */
+  gap: 29px; /* separación horizontal moderada */
+  justify-content: center; /* centra el conjunto de perfiles */
+  margin: -20px auto 0 auto;
+}
+.profile img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; 
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  animation: dragonBallGlow 2s infinite alternate; /* animación automática */
 }
 
-.profile {
-  text-align: center;
+@keyframes dragonBallGlow {
+  0%, 50% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  100% {
+    transform: scale(1.15);
+    box-shadow: 
+      0 0 15px 8px rgba(255, 215, 0, 0.9),
+      0 0 30px 15px rgba(255, 223, 100, 0.6),
+      0 0 50px 25px rgba(255, 215, 0, 0.3),
+      inset 0 0 15px rgba(255, 240, 150, 0.6);
+  }
+}
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas fijas */
+  gap: 30px; /* separación entre perfiles */
+  justify-items: center; /* centra cada perfil en su celda */
+  margin: 0 auto;
+}
+
+.profiles {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas */
+  gap: 30px; /* separación entre perfiles */
+  justify-items: center; /* centra cada perfil en su celda */
+  justify-content: start; /* alineación inicial */
+  padding-left: 150px; /* desplaza todo el grid más a la derecha */
+  margin: 0 auto;
 }
 
 .profile img {
-  width: 140px; /* antes 180px */
-  height: 140px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  animation: dragonBallGlow 2s infinite alternate;
+  display: block;
+  transition: transform 0.3s;
 }
-
-.profile img:hover {
-  transform: scale(1.15);
-  box-shadow: 0 0 25px 7px rgba(255,200,0,0.8),
-              0 0 35px 12px rgba(255,100,0,0.5);
-}
-
-.profile p {
-  margin-top: 5px;
-  font-size: 18px;
-  color: white; /* letras blancas */
-  font-weight: bold; /* gruesas */
-}
-
-
-
-
-
-
-
-
