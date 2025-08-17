@@ -204,8 +204,8 @@ body {
   background: #111; 
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); 
-  margin-left: 270px; /* mueve el div a la derecha */
-  max-width: 1000px;    /* opcional, para que no se expanda demasiado */
+  margin-left: 350px; /* mueve el div a la derecha */
+  max-width: 1250px;    /* opcional, para que no se expanda demasiado */
 }
 
 .description h2 {
@@ -343,6 +343,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* brillo suave */
   margin: 20px; /* espacio alrededor */
 }
+
 
 
 
