@@ -4,7 +4,7 @@
   border-radius: 12px;          /* bordes redondeados */
   padding: 10px;                /* espacio entre la imagen y el borde */
   background-color: #ff0000;    /* fondo rojo */
-  margin-left: -6px;           /* desplaza un poco a la izquierda */
+  margin-left: -12px;           /* desplaza un poco a la izquierda */
   margin-top: -12px;            /* 👉 desplaza el div hacia arriba */
 }
 
@@ -14,6 +14,7 @@
   object-fit: cover;            /* ajusta la imagen sin deformarla */
   border-radius: 8px;           /* opcional, para que siga el borde redondeado */
 }
+
 
 
 
