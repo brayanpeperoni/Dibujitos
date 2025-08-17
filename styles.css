@@ -1,5 +1,5 @@
 header {
-  height: 100vh;
+  height: 100px;
   background-image: url('./img/fondo.png');
   background-size: contain;
   background-position: top 0% right 35%; /* mueve un poco hacia la derecha */
@@ -12,4 +12,5 @@ header {
   color: white;
   padding-top: 20px;
 }
+
 
