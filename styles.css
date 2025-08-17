@@ -50,6 +50,11 @@
   color: #fff;
   font-size: 2.5rem;
   font-weight: bold;
+ position: relative;
+  left: -175px; /* desplaza el div hacia la derecha */
+  /* línea recta */
+  white-space: nowrap;  /* evita saltos de línea */
+  display: inline-block; /* para poder controlar margen y posición */
   text-align: center;
 
   /* desplazamiento hacia la derecha */
@@ -63,7 +68,7 @@
     0 0 40px #0ff,
     0 0 50px #0ff;
 
-  animation: glow 1.5s ease-in-out infinite alternate; /* animación de brillo */
+  animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
@@ -152,7 +157,7 @@ body {
 .profiles {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 columnas */
-  gap: 30px; /* separación entre perfiles */
+  gap: 40px; /* separación entre perfiles */
   justify-items: center; /* centra cada perfil en su celda */
   justify-content: start; /* alineación inicial */
   padding-left: 35px; /* desplaza todo el grid más a la derecha */
@@ -163,8 +168,77 @@ body {
   width: 270px;
   height: 270px;
   border-radius: 50%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
   animation: dragonBallGlow 2s infinite alternate;
   display: block;
   transition: transform 0.3s;
+}
+.profile a {
+  text-decoration: none; /* quita subrayado */
+}
+
+.profile p {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 8px 15px;
+  border: 4px solid #000;
+  border-radius: 12px;
+  
+  text-shadow: 
+    0 0 5px #000,
+    0 0 10px #000,
+    0 0 15px #000;
+  
+  box-shadow: 
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 15px #fff;
+
+  transition: all 0.3s ease;
+}
+.description {
+  text-align: center; /* centrado del texto */
+  padding: 20px;
+  background: #111; /* fondo oscuro para que destaque */
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); /* efecto de brillo suave */
+  position: relative;
+  left: 120px; /* desplaza el div hacia la derecha */
+}
+
+.description h2 {
+  font-family: 'Arial Black', Gadget, sans-serif; /* fuente gruesa y moderna */
+  color: #0ff; /* color azul neón */
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff; /* efecto neón */
+  margin-bottom: 15px;
+}
+
+.description p {
+  font-family: 'Verdana', Geneva, sans-serif; /* fuente legible */
+  color: #fff; /* blanco para destacar sobre fondo oscuro */
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-shadow: 0 0 3px #000; /* borde negro sutil */
+}
+
+.banner {
+  width: 90%;           /* ancho del banner */
+  margin-left: 150px;    /* desplaza a la derecha */
+  border: 8px solid #0ff; /* borde base azul neón */
+  border-radius: 15px;    /* bordes redondeados */
+  box-shadow: 
+    0 0 15px #0ff,
+    0 0 30px #0ff,
+    0 0 45px #0ff,
+    0 0 60px #0ff;      /* efecto de brillo tipo rayos */
+  overflow: hidden;       /* recorta cualquier desbordamiento */
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
