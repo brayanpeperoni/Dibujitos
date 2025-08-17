@@ -2,13 +2,13 @@ header {
   height: 100vh;
   background-image: url('./img/fondo.png');
   background-size: contain;
-  background-position: top center; /* la sube hacia arriba */
+  background-position: top 0% right 40%; /* mueve un poco hacia la derecha */
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0);
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* contenido arriba */
+  align-items: flex-start;
   text-align: center;
   color: white;
-  padding-top: 20px; /* margen superior para el texto */
+  padding-top: 20px;
 }
