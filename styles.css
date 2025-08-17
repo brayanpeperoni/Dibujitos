@@ -6,11 +6,12 @@
   background-color: #ff0000;      /* color de fondo dentro del marco */
 }
 .fondo img {
-  width: 1400px;
+  width: 1700px;
   height: auto;
   object-fit: cover; /* ajusta la imagen sin deformarla */
   border-radius: 8px; /* opcional, para que siga el borde redondeado */
 }
+
 
 
 
