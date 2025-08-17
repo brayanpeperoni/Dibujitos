@@ -1,7 +1,8 @@
 header {
-  height: 1000px;
+  height: 1200px; /* o el alto que necesites */
   background-image: url('./img/fondo.png');
-  background-position: top right; /* imagen en la esquina superior derecha */
+  background-size: contain;         /* mantiene la proporción de la imagen */
+  background-position: center right; /* centrado verticalmente y alineado a la derecha */
   background-repeat: no-repeat;
   background-color: transparent;
 }
