@@ -200,29 +200,16 @@ body {
 }
 .description {
   text-align: center; 
-  padding: 40px;
+  padding: 60px;
   background: #111; 
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); 
-  margin-left: 525px; /* mueve el div a la derecha */
-  max-width: 850px;    /* opcional, para que no se expanda demasiado */
+  margin: 40px auto;   /* centra horizontalmente */
+  max-width: 1000px;   /* ancho máximo */
+  position: relative;  /* mantiene su lugar en el flujo */
+  left: 230px;         /* lo corre a la derecha */
 }
 
-.description h2 {
-  font-family: 'Arial Black', Gadget, sans-serif; 
-  color: #0ff; 
-  font-size: 2.5rem;
-  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
-  margin-bottom: 15px;
-}
-
-.description p {
-  font-family: 'Verdana', Geneva, sans-serif; 
-  color: #fff; 
-  font-size: 1.3rem;
-  line-height: 1.6;
-  text-shadow: 0 0 3px #000;
-}
 
 
 .banner {
@@ -343,6 +330,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* brillo suave */
   margin: 20px; /* espacio alrededor */
 }
+
 
 
 
