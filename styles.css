@@ -200,11 +200,11 @@ body {
 }
 .description {
   text-align: center; 
-  padding: 80px;
+  padding: 40px;
   background: #111; 
-  border-radius: 15px;
+  border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5); 
-  margin-left: 450px; /* mueve el div a la derecha */
+  margin-left: 525px; /* mueve el div a la derecha */
   max-width: 850px;    /* opcional, para que no se expanda demasiado */
 }
 
@@ -343,6 +343,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* brillo suave */
   margin: 20px; /* espacio alrededor */
 }
+
 
 
 
