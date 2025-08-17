@@ -1,8 +1,7 @@
-header {
-  height: 1200px;
-  background: 
-    linear-gradient(to right, #000 50%, transparent 50%), /* mitad izquierda fija negra */
-    url('./img/fondo.png') center right no-repeat;
-  background-size: auto, 700px auto; /* imagen más grande */
-  background-color: #000;
+.fondo {
+  display: inline-block;       /* se ajusta al tamaño de la imagen */
+  border: 5px solid #fff;      /* borde blanco de 5px */
+  border-radius: 12px;         /* bordes redondeados (opcional) */
+  padding: 10px;               /* espacio entre la imagen y el borde */
+  background-color: #000;      /* color de fondo dentro del marco */
 }
