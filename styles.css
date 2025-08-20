@@ -247,6 +247,16 @@ body {
   height: auto;
   display: block;
 }
+.floating-icons {
+  position: fixed;       /* Fijo en la pantalla */
+  bottom: 20px;          /* A 20px del borde inferior */
+  right: 20px;           /* A 20px del borde derecho */
+  display: flex;
+  flex-direction: column; /* Íconos en columna */
+  gap: 20px;              /* Espacio entre los íconos */
+  z-index: 1000;          /* Que esté por encima de otros elementos */
+}
+
 .floating-icons a img {
   width: 130px;           /* Tamaño más grande */
   height: 130px;
@@ -260,6 +270,7 @@ body {
   transform: scale(1.2);                       
   box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff; 
 }
+
 
 .album {
   display: flex;
@@ -372,7 +383,7 @@ body {
   justify-content: flex-end; /* botones alineados a la derecha */
   gap: 80px;                 /* separación entre botones */
   margin-left: auto;          /* empuja el div completamente a la derecha */
-  margin-right: -280px;         /* espacio opcional desde el borde derecho */
+  margin-right: -300px;         /* espacio opcional desde el borde derecho */
   width: max-content;         /* que el div solo ocupe el ancho de los botones */
 }
 
@@ -423,5 +434,3 @@ body {
   margin: 20px 0;
   margin-right: -450px; 
 }
-
-
