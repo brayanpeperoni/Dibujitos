@@ -247,30 +247,18 @@ body {
   height: auto;
   display: block;
 }
-
-.floating-icons {
-  position: fixed;       /* Fijo en la pantalla */
-  bottom: 20px;          /* A 20px del borde inferior */
-  right: 20px;           /* A 20px del borde derecho */
-  display: flex;
-  flex-direction: column; /* Íconos en columna */
-  gap: 20px;              /* Espacio entre los íconos */
-  z-index: 1000;          /* Que esté por encima de otros elementos */
-}
-
 .floating-icons a img {
-  width: 100px;             /* Más grande */
-  height: 100px;
-  border-radius: 50%;      /* Redondos */
-  border: 3px solid #0ff;  /* Borde brillante */
-  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff; /* Brillo neón */
+  width: 130px;           /* Tamaño más grande */
+  height: 130px;
+  border-radius: 50%;      
+  border: 3px solid #0ff;  
+  box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff; 
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .floating-icons a img:hover {
-  transform: scale(1.2);                       /* Agranda al pasar el mouse */
-  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff; /* Brillo intenso */
-  
+  transform: scale(1.2);                       
+  box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff; 
 }
 
 .album {
@@ -435,4 +423,5 @@ body {
   margin: 20px 0;
   margin-right: -450px; 
 }
+
 
