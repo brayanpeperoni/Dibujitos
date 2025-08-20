@@ -381,22 +381,22 @@ body {
 .inscripcion {
   display: flex;
   justify-content: flex-end; /* botones alineados a la derecha */
-  gap: 80px;                 /* separación entre botones */
+  gap: 100px;                 /* separación entre botones */
   margin-left: auto;          /* empuja el div completamente a la derecha */
-  margin-right: -300px;         /* espacio opcional desde el borde derecho */
+  margin-right: -400px;         /* espacio opcional desde el borde derecho */
   width: max-content;         /* que el div solo ocupe el ancho de los botones */
 }
 
 /* Estilos generales */
+/* Estilos generales */
 .btn {
-  font-size: 22px;
-  font-weight: bold;
-  padding: 20px 40px;
-  border-radius: 15px;
-  cursor: pointer;
+  font-size: 50px;          /* más grande */
+  padding: 30px 60px;       /* proporcional al tamaño del texto */
+  border-radius: 20px;      /* ligeramente más redondeado */
   text-decoration: none;    /* 🔹 quita la raya de los enlaces */
-  transition: all 0.3s ease;
+  cursor: pointer;
   display: inline-block;
+  transition: all 0.3s ease;
 }
 
 /* Botón Evento: fondo negro, borde blanco brillante */
@@ -432,5 +432,5 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px 0;
-  margin-right: -450px; 
+  margin-right: -550px; 
 }
