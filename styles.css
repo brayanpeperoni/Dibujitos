@@ -384,7 +384,7 @@ body {
   justify-content: flex-end; /* botones alineados a la derecha */
   gap: 80px;                 /* separación entre botones */
   margin-left: auto;          /* empuja el div completamente a la derecha */
-  margin-right: -400px;         /* espacio opcional desde el borde derecho */
+  margin-right: -280px;         /* espacio opcional desde el borde derecho */
   width: max-content;         /* que el div solo ocupe el ancho de los botones */
 }
 
@@ -433,5 +433,6 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px 0;
-  margin-right: -300px; 
+  margin-right: -450px; 
 }
+
