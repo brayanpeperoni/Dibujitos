@@ -17,7 +17,7 @@
 <div class="description">
       <h2>Descripción</h2> 
       <p alt="des">
-        Bienvenidos a la comunidad Legions Dragons Z, un espacio donde
+        Bienvenidos a la comunidad Legions Dragons Z,<br> un espacio donde
         compartimos creatividad, diversión y mucho más. ¡Únete y sé parte de
         esta gran familia!
       </p> <br>
@@ -31,14 +31,15 @@
     <!-- IZQUIERDA: perfiles -->
     <div class="profiles">
       <div class="profile">
-        <a href="https://www.tiktok.com/@sam092626" target="_blank">
+        <a href="https://www.tiktok.com/@sam092626" target="_blank" onclick="playAudio('audio-sam')">
           <img class="glow" src="./img/sam.png" alt="Sam" />
           <p>Sam</p>
         </a>
+        <audio id="audio-sam" src="./audio/sam.mp3" preload="auto"></audio>
       </div>
 
       <div class="profile">
-        <a href="https://www.tiktok.com/@palvko1" target="_blank" onclick="playAudio('audio-brayan')">
+        <a href="https://www.tiktok.com/@paluko1" target="_blank" onclick="playAudio('audio-brayan')">
           <img class="glow" src="./img/brayan.png" alt="Brayan" />
           <p>Brayan</p>
         </a>
@@ -75,10 +76,11 @@
       </div>
 
       <div class="profile">
-        <a href="https://www.tiktok.com/@minidelosbackyardigans" target="_blank">
+        <a href="https://www.tiktok.com/@minidelosbackyardigans" target="_blank"  onclick="playAudio('audio-mini')">
           <img class="glow" src="./img/mini.png" alt="Mini" />
           <p>Mini</p>
         </a>
+         <audio id="audio-mini" src="./audio/mini.mp3" preload="auto"></audio>
       </div>
 
       <div class="profile">
@@ -132,29 +134,41 @@ function playAudio(audioId) {
   }
 }
 </script>
-</body>
+</body> <br><br>
+<!-- Botón de WhatsApp -->
+<div class="inscripcion">
+  <!-- Botón de inscripción con enlace -->
+  <a href="https://wa.me/51952130169" target="_blank" class="btn evento">
+    🎉 Inscribirse al Evento
+  </a>
 
-¡
+  <!-- Botón de WhatsApp con enlace -->
+  <a href="https://chat.whatsapp.com/DSkSgh4n8ZDGFseCQgv4gi?mode=ac_t" target="_blank" class="btn whatsapp">
+    💬 Únete a nuestro grupo de WhatsApp
+  </a>
+</div>
+
+<br><br>
+
+
 <div class="album">
     <img src="./img/sticker1.jpeg" alt="Sticker 1" class="active">
     <img src="./img/sticker2.jpeg" alt="Sticker 2" class="active">
     <img src="./img/sticker3.jpeg" alt="Sticker 3" class="active">
     <img src="./img/sticker4.jpeg" alt="Sticker 4" class="active">
     <img src="./img/sticker5.jpeg" alt="Sticker 5" class="active">
-    <img src="./img/sticker6.jpeg" alt="Sticker 6" class="active">
+    <img src="./img/sticker6.webp" alt="Sticker 6" class="active">
 </div>
 
 
-
 <br>
-<img class="logo" src="./img/logo.gif" alt="paw with ad, conveying a friendly and welcoming mood">
-  
-
+<img class="logo" src="./img/logo.gif" alt="paw">
 <br>
-<div class="fo">
-  <footer>  
-    <p>© 2025 Legions Dragons Z - Todos los derechos reservados</p>
-  </footer>
+
+<div class="derecho">
+<footer class="derechos">  
+  <p>© 2025 Legions Dragons Z - Todos los derechos reservados</p>
+</footer>
 </div>
 
 </html>
