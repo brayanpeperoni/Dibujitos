@@ -330,29 +330,147 @@ body {
   50% {
     opacity: 0.7;
 }
-.footer {
-  background: #111; /* fondo oscuro */
-  text-align: center;
-  padding: 20px;
-  border-top: 3px solid #0ff; /* borde superior brillante */
-  box-shadow: 0 -0 20px rgba(0, 255, 255, 0.7); /* brillo suave */
+
+.inscripcion {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
 }
 
-.footer {
-  background: #111; /* fondo oscuro */
-  text-align: center;
-  padding: 20px;
-  border: 3px solid #0ff; /* borde brillante */
-  border-radius: 15px; /* bordes redondeados */
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7); /* brillo suave */
-  margin: 20px; /* espacio alrededor */
+/* Estilos generales */
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+/* Botón de evento *
+.inscripcion {
+  display: flex;
+  justify-content: flex-end; /* manda todo a la derecha */
+  margin: 60px 100px;        /* margen general */
+  gap: 20px;                 /* separación mínima entre botones */
+}
 
+/* Estilos generales */
+.btn {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(255,255,255,0.5);
+  animation: pulse 2s infinite;
+}
 
+/* Animación de latido */
+@keyframes pulse {
+  0%   { transform: scale(1);   box-shadow: 0 0 20px rgba(255,255,255,0.3); }
+  50%  { transform: scale(1.1); box-shadow: 0 0 40px rgba(255,255,255,0.7); }
+  100% { transform: scale(1);   box-shadow: 0 0 20px rgba(255,255,255,0.3); }
+}
 
+/* Botón evento */
+.inscripcion {
+  display: flex;
+  justify-content: flex-end; /* 🔹 manda todo el bloque a la derecha */
+  gap: 80px;                 /* 🔹 separación entre botones */
+  margin-right: 50px;        /* 🔹 espacio del borde derecho */
+}
 
+/* Botón evento */
+.btn.evento {
+  background: linear-gradient(45deg, #ff3333, #ff1a75);
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  padding: 20px 40px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn.evento:hover {
+  background: linear-gradient(45deg, #ff1a75, #ff3333);
+  transform: scale(1.2);
+}
 
+/* Botón WhatsApp */
+.btn.whatsapp {
+  background: linear-gradient(45deg, #25D366, #128C7E);
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  padding: 20px 40px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn.whatsapp:hover {
+  background: linear-gradient(45deg, #128C7E, #25D366);
+  transform: scale(1.2);
+}
+.derecho {
+  display: flex;
+  justify-content: center; /* 🔹 centra el footer */
+  margin: 20px 0;
+}
+
+.inscripcion {
+  display: flex;
+  justify-content: flex-end; /* 🔹 manda todo a la derecha */
+  gap: 80px;                 /* 🔹 separación entre botones */
+  margin-right: 50px;
+}
+
+/* Estilos generales */
+.btn {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  text-decoration: none;    /* 🔹 quita la raya de los enlaces */
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Botón Evento: fondo negro, borde blanco brillante */
+.btn.evento {
+  background: linear-gradient(45deg, #000000, #222222);
+  color: white;
+  border: 3px solid white;
+  box-shadow: 0 0 12px #fff, 0 0 25px #aaa;
+}
+
+.btn.evento:hover {
+  background: linear-gradient(45deg, #111, #333);
+  transform: scale(1.15);
+  box-shadow: 0 0 20px #fff, 0 0 40px #aaa;
+}
+
+/* Botón WhatsApp: verde brillante */
+.btn.whatsapp {
+  background: linear-gradient(45deg, #25D366, #128C7E);
+  color: white;
+  border: 3px solid #25D366;
+  box-shadow: 0 0 12px #25D366, 0 0 25px #128C7E;
+}
+
+.btn.whatsapp:hover {
+  background: linear-gradient(45deg, #128C7E, #25D366);
+  transform: scale(1.15);
+  box-shadow: 0 0 20px #25D366, 0 0 40px #128C7E;
+}
+
+/* Footer centrado */
+.derecho {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
 
 
 
