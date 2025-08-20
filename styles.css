@@ -270,6 +270,7 @@ body {
 .floating-icons a img:hover {
   transform: scale(1.2);                       /* Agranda al pasar el mouse */
   box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff; /* Brillo intenso */
+  
 }
 
 .album {
@@ -320,6 +321,7 @@ body {
   width: 400px;             /* ajusta el tamaño a tu gusto */
   height: auto;
   animation: flicker 2s infinite alternate; /* efecto de brillo que prende y apaga */
+  margin-right: -80px; 
 }
 
 @keyframes flicker {
@@ -377,52 +379,13 @@ body {
   100% { transform: scale(1);   box-shadow: 0 0 20px rgba(255,255,255,0.3); }
 }
 
-/* Botón evento */
 .inscripcion {
   display: flex;
-  justify-content: flex-end; /* 🔹 manda todo el bloque a la derecha */
-  gap: 80px;                 /* 🔹 separación entre botones */
-  margin-right: 50px;        /* 🔹 espacio del borde derecho */
-}
-
-/* Botón evento */
-.btn.evento {
-  background: linear-gradient(45deg, #ff3333, #ff1a75);
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-  padding: 20px 40px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-.btn.evento:hover {
-  background: linear-gradient(45deg, #ff1a75, #ff3333);
-  transform: scale(1.2);
-}
-
-/* Botón WhatsApp */
-.btn.whatsapp {
-  background: linear-gradient(45deg, #25D366, #128C7E);
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
-  padding: 20px 40px;
-  border-radius: 12px;
-  cursor: pointer;
-}
-.btn.whatsapp:hover {
-  background: linear-gradient(45deg, #128C7E, #25D366);
-  transform: scale(1.2);
-}
-.derecho {
-  display: flex;
-  justify-content: center; /* 🔹 centra el footer */
-  margin: 20px 0;
-}
-
-.inscripcion {
-  display: flex;
-  justify-content: flex-end; /* 🔹 manda todo a la derecha */
-  gap: 80px;                 /* 🔹 separación entre botones */
-  margin-right: 50px;
+  justify-content: flex-end; /* botones alineados a la derecha */
+  gap: 80px;                 /* separación entre botones */
+  margin-left: auto;          /* empuja el div completamente a la derecha */
+  margin-right: -400px;         /* espacio opcional desde el borde derecho */
+  width: max-content;         /* que el div solo ocupe el ancho de los botones */
 }
 
 /* Estilos generales */
@@ -470,8 +433,5 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px 0;
+  margin-right: -300px; 
 }
-
-
-
-
