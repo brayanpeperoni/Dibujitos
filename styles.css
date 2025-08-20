@@ -380,12 +380,18 @@ body {
 
 .inscripcion {
   display: flex;
-  flex-direction: column;  /* apila los botones uno sobre otro */
-  align-items: flex-end;    /* los mantiene alineados a la derecha */
-  gap: 40px;                /* espacio entre los botones */
-  margin-left: auto;        /* empuja todo el div a la derecha */
-  margin-right: 50px;       /* separación opcional desde el borde */
+  flex-direction: column;   /* apila los botones */
+  align-items: flex-end;    /* alineados a la derecha */
+  gap: 40px;                /* espacio entre botones */
+  margin-left: auto;        
+  margin-right: 50px;
+  width: 1000px;             /* ancho del div, puedes ajustar */
+  padding: 30px;            /* espacio interno */
+  background: rgba(0,0,0,0.5); /* opcional: fondo semitransparente */
+  border-radius: 20px;      /* bordes redondeados */
+  box-shadow: 0 0 30px rgba(255,255,255,0.3); /* brillo suave */
 }
+
 
 
 /* Estilos generales */
