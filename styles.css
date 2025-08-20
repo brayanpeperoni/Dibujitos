@@ -384,7 +384,7 @@ body {
   align-items: flex-end;
   gap: 40px;
   
-  margin-left: 400px;   /* antes estaba auto, ahora lo ajustas hacia la izquierda */
+  margin-left: 275px;   /* antes estaba auto, ahora lo ajustas hacia la izquierda */
   margin-right: auto;  /* asegura que el div no se quede pegado a la derecha */
 
   width: 1000px;
@@ -396,34 +396,34 @@ body {
 
 
 
-/* Estilos generales */
+/* Estilos generales de botones más grandes */
 .btn {
-  font-size: 50px;          /* más grande */
-  padding: 30px 60px;       /* proporcional al tamaño del texto */
-  border-radius: 20px;      /* ligeramente más redondeado */
-  text-decoration: none;    /* 🔹 quita la raya de los enlaces */
+  font-size: 70px;          /* texto mucho más grande */
+  padding: 40px 80px;       /* proporcional al tamaño del texto */
+  border-radius: 20px;      
+  text-decoration: none;    
   cursor: pointer;
   display: inline-block;
   transition: all 0.3s ease;
 }
+
+/* Botón de evento */
 .btn.evento {
   background: linear-gradient(45deg, #000000, #222222);
   color: white;
   border: 3px solid white;
   box-shadow: 0 0 12px #fff, 0 0 25px #aaa;
 
-  /* Nuevo: mover a la izquierda */
-  margin-left: 300px;          /* ajusta según lo necesites */
-  position: relative;
-  left: -120px;             /* negativo mueve a la izquierda */
+  /* eliminamos margen y posición para no moverlo */
 }
 
-/* Botón WhatsApp: verde brillante */
+/* Botón WhatsApp */
 .btn.whatsapp {
   background: linear-gradient(45deg, #25D366, #128C7E);
   color: white;
   border: 3px solid #25D366;
   box-shadow: 0 0 12px #25D366, 0 0 25px #128C7E;
+  align-self: center;      /* mantiene centrado */
 }
 
 .btn.whatsapp:hover {
@@ -431,6 +431,8 @@ body {
   transform: scale(1.15);
   box-shadow: 0 0 20px #25D366, 0 0 40px #128C7E;
 }
+
+
 
 /* Footer centrado */
 .derecho {
